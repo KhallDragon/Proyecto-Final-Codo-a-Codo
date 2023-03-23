@@ -83,8 +83,15 @@ text-transform: uppercase;
     background-attachment: fixed;
     border-radius: 0 !important;
     padding-block: 5rem;
+    position: relative;
 }
 
+.carrousel::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(0,0,0,0.33);
+}   
 .px-todo{
     padding-inline: 5rem !important;
 }
@@ -109,7 +116,6 @@ button.boton-producto {
 
 .card-body hr{
     color: red;
-    width: 645px;
     border: 1px solid #FF3333;
     opacity: 1;
 }
